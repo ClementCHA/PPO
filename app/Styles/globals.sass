@@ -1,0 +1,50 @@
+@import '@/Styles/reset.css'
+@import '@/Styles/vars.sass'
+@import '@/Styles/sizes.sass'
+@import '@/Styles/mixins.sass'
+
+*::-webkit-scrollbar
+  max-width: 0.5rem
+  max-height: 0.5rem
+
+html
+  color-scheme: dark light
+  scroll-behavior: smooth
+  scroll-padding: var(--spacing-xxxxl)
+
+body
+  -webkit-tap-highlight-color: transparent
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  width: 100vw
+  min-height: 100svh
+  display: flex
+  flex-direction: column
+  line-height: 1.6
+  letter-spacing: 0.025ch
+  overflow-x: hidden
+  transition-property: color, background-color
+
+main
+  display: flex
+  flex-direction: column
+  gap: var(--spacing-xxxxl)
+  flex: 1
+  margin-inline: auto
+  padding-block: clamp(2rem, 8vh, 10rem)
+  width: var(--content-width)
+
+h1, h2, h3, h4, h5, h6
+  font-family: var(--font-title)
+
+.bold
+  font-weight: 700
+
+.italic
+  font-style: italic
+
+.not-found
+  @include flex-center
+  flex-direction: column
+  flex: 1
+  gap: var(--spacing-xxxxl)

@@ -1,0 +1,32 @@
+
+@mixin flex-center
+  display: flex
+  align-items: center
+  justify-content: center
+
+@mixin full-screen
+  position: fixed
+  inset: 0
+  width: 100vw
+  height: 100svh
+
+@mixin fixed-center
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+@mixin absolute-center
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+@mixin text-ellipsis
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+@mixin disabled
+  pointer-events: none
+  user-select: none
