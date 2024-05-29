@@ -1,0 +1,17 @@
+{
+  "app": {
+  },
+  "pages": {
+    "landing": {},
+    "playground": {},
+    "myworks": {},
+    "404": {},
+    "process": {},
+    "project": {},
+    "about": {}
+  },
+  "layout": {
+    "footer": {},
+    "menu": {}
+  }
+}
